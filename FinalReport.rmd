@@ -19,7 +19,11 @@ avastd <-filter(avast,DrugUser=="yes")
 
 <!--In this section you explain what you are trying to show. Where did the data come from? What is the research or other question you are trying to answer?. If you skimp in this section expect to be marked down in your grade. Paint a picture of the project a couple of paragraphs is expected!-->
 
-A new preventative aides (abacavirinol) is under test in clinical trials. Analyze the effectiveness of this drug across the board. Consider population subgroups by gender, drug use, and sexual orientation. Finish this!
+A new preventative aides (abacavirinol) is under test in clinical trials. We will analyze the effectiveness of this drug across the board. While considering population subgroups by gender, drug use, and sexual orientation.
+
+$H_O$: There is no relationship between getting aides and taking avastivironal.
+
+$H_O$: There is relationship between getting aides and taking avastivironal.
 
 # Methods
 
