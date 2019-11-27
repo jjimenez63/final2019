@@ -1,5 +1,5 @@
 ---
-title: "Aides Drug"
+title: "Avastivironal Effictiveness in Drug Users"
 author: "Judith Jimenez"
 date: "11/21/2019"
 output: html_document
@@ -15,11 +15,11 @@ avastG <-filter(avast,LGBTQ=="gay")
 avastd <-filter(avast,DrugUser=="yes")
 ```
 
-# Introduction
+# Introduction ~ DRUG USERS
 
 <!--In this section you explain what you are trying to show. Where did the data come from? What is the research or other question you are trying to answer?. If you skimp in this section expect to be marked down in your grade. Paint a picture of the project a couple of paragraphs is expected!-->
 
-A new preventative aides (abacavirinol) is under test in clinical trials. We will analyze the effectiveness of this drug across the board. While considering population subgroups by gender, drug use, and sexual orientation.
+A new preventative aides (abacavirinol) is under test in clinical trials. We will analyze the effectiveness of this drug across the board. While specifically analyzing the effectiveness of the drug in drug users.
 
 $H_O$: There is no relationship between getting aides and taking avastivironal.
 
@@ -29,11 +29,7 @@ $H_O$: There is relationship between getting aides and taking avastivironal.
 
 <!--Decide on your methods: use "variable analysis" or other appropriate descriptors. Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
-#Results
 
-<!--Divide this section into two sub-sections: One for your descriptive results and one for your inferential results.!-->
-
-## Descriptive Results
 
 ### Graphical Descriptive Results
 
