@@ -1,0 +1,67 @@
+---
+title: "Avastivironal Effictiveness in Females"
+author: "Judith Jimenez"
+date: "11/21/2019"
+output: html_document
+---
+
+```{r include=FALSE,echo=FALSE}
+require(tidyverse)
+require(tigerstats)
+avast <-read.csv(file="avastivironal.csv",header=TRUE)
+avastf <- filter(avast,sex=="gal")
+avastb <-filter(avast,sex=="guy")
+avastG <-filter(avast,LGBTQ=="gay")
+avastd <-filter(avast,DrugUser=="yes")
+```
+
+# Introduction ~ WOMEN
+
+<!--In this section you explain what you are trying to show. Where did the data come from? What is the research or other question you are trying to answer?. If you skimp in this section expect to be marked down in your grade. Paint a picture of the project a couple of paragraphs is expected!-->
+
+A new preventative aides (abacavirinol) is under test in clinical trials. We will analyze the effectiveness of this drug across the board. While specifically looking into the effectiveness of the drug in the female subgroup.
+
+$H_O$: There is no relationship between getting aides and taking avastivironal.
+
+$H_O$: There is relationship between getting aides and taking avastivironal.
+
+# Methods
+
+<!--Decide on your methods: use "variable analysis" or other appropriate descriptors. Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
+
+We will be using bar charts and chi-tests, along with the fisher test to analyze the data given.
+
+### Graphical Descriptive Results
+
+<!--Graphical results here. Make sure to show your code. Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too. Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
+
+```{r}
+barchartGC(~infected + treatment,data=avastf,type="percent")
+```
+
+
+
+
+### Numerical Descriptive Results
+
+<!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+table1 <- xtabs(~infected + treatment, data=avastf)
+rowPerc(table1)
+colPerc(table1)
+```
+## Inferential Results
+
+<!--State hypothesis clearly. Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc. Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+# Discussion and Conclusion
+
+
+Looking at the barchart, it shows that 30% of people who were taking avastivironal contracted aids while more than 60% of the women taking the placebo eneded up getting aids. There is in facts a difference in which taking avastivironal prevented woman from the disease. Due to the evidence, I reject the null hypothesis.
