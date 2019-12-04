@@ -29,7 +29,7 @@ $H_O$: There is relationship between getting aides and taking avastivironal.
 
 <!--Decide on your methods: use "variable analysis" or other appropriate descriptors. Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
 
-
+We will be using bar charts and chi-tests, along with the fisher test to analyze the data given.
 
 ### Graphical Descriptive Results
 
@@ -64,3 +64,6 @@ fisher.test(table1)
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here. If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason. Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+The data shows that only 25% of people who were taking avastivironal contracted aids while more than 70% of the people in this group taking the placebo eneded up getting aids. There is in facts a difference in which taking avastivironal prevented woman from the disease. I reject the null hypothesis.
+
